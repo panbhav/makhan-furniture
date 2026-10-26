@@ -186,9 +186,9 @@ export const Footer: React.FC<FooterProps> = ({ language, onOpenQuoteModal }) =>
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 font-semibold text-[#c5a059] hover:text-[#e4be73] transition-colors underline decoration-[#c5a059]/40 underline-offset-4 hover:decoration-[#e4be73] group"
-                title="PixelToCloud - Web Design & Cloud Development Agency"
+                title="PixelToCloud - Web Design & Cloud Development"
               >
-                <span>PixelToCloud</span>
+                <span>PixelToCloud (pixeltocloud.com)</span>
                 <ExternalLink className="w-3 h-3 opacity-70 group-hover:opacity-100 transition-opacity" />
               </a>
             </span>
