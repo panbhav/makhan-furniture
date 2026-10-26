@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageSquare, MapPin, ArrowUp, ArrowRight } from 'lucide-react';
+import { Phone, MessageSquare, MapPin, ArrowUp, ArrowRight, ExternalLink } from 'lucide-react';
 import { siteConfig } from '../data/siteContent';
 import { BrandLogo } from './BrandLogo';
 import { translations } from '../data/translations';
@@ -170,18 +170,32 @@ export const Footer: React.FC<FooterProps> = ({ language, onOpenQuoteModal }) =>
 
         </div>
 
-        {/* Bottom Copyright & Back to Top */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8c8073]">
-          <div>
-            {t.footer.copyright}
+        {/* Bottom Copyright, Credits & Back to Top */}
+        <div className="pt-8 border-t border-[#c5a059]/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#8c8073]">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+            <span>{t.footer.copyright}</span>
+            <span className="hidden sm:inline text-[#c5a059]/30">•</span>
+            <span>Raath Nagar, Alwar (Rajasthan)</span>
           </div>
 
-          <div className="flex items-center gap-6">
-            <span>Raath Nagar, Alwar (Rajasthan)</span>
-            
+          <div className="flex items-center gap-4 sm:gap-6 flex-wrap justify-center">
+            <span className="text-[#a99c8f] flex items-center gap-1.5">
+              <span>{t.footer.creditsPrefix}</span>
+              <a
+                href="https://pixeltocloud.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-semibold text-[#c5a059] hover:text-[#e4be73] transition-colors underline decoration-[#c5a059]/40 underline-offset-4 hover:decoration-[#e4be73] group"
+                title="PixelToCloud - Web Design & Cloud Development Agency"
+              >
+                <span>PixelToCloud</span>
+                <ExternalLink className="w-3 h-3 opacity-70 group-hover:opacity-100 transition-opacity" />
+              </a>
+            </span>
+
             <button
               onClick={scrollToTop}
-              className="p-2 rounded-sm bg-[#15110e] hover:bg-[#221b16] text-[#c5a059] transition-colors border border-[#c5a059]/20"
+              className="p-2 rounded-sm bg-[#15110e] hover:bg-[#221b16] text-[#c5a059] transition-colors border border-[#c5a059]/20 cursor-pointer shrink-0"
               aria-label="Back to top"
             >
               <ArrowUp className="w-4 h-4" />

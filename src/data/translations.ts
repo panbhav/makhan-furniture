@@ -127,6 +127,7 @@ export const translations = {
       serving: 'Serving Raath Nagar & Alwar (Rajasthan)',
       cta: 'Start Your Project →',
       copyright: '© 2026 Makhan Carpenter. All Rights Reserved.',
+      creditsPrefix: 'Website Designed & Developed by',
     }
   },
 
@@ -258,6 +259,7 @@ export const translations = {
       serving: 'अलवर (राजस्थान) में कार्यरत',
       cta: 'प्रोजेक्ट शुरू करें →',
       copyright: '© 2026 Makhan Carpenter. सर्वाधिकार सुरक्षित।',
+      creditsPrefix: 'वेबसाइट डिज़ाइन एवं डेवलपमेंट:',
     }
   }
 };
