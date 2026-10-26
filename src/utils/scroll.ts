@@ -1,6 +1,6 @@
 /**
  * Smoothly scrolls to a given section by element ID without polluting the browser URL with #hash fragments.
- * Keeps single-page app URL clean (e.g. https://panbhav.github.io/makhan-carpenter/).
+ * Keeps single-page app URL clean (e.g. https://furniture.pixeltocloud.com).
  */
 export const scrollToSection = (sectionId: string) => {
   if (!sectionId || sectionId === 'home' || sectionId === 'top') {
